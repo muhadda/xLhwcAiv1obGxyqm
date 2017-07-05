@@ -17,6 +17,8 @@
       .well {
     border-radius: 0px;
         background-color:#fff;
+            margin: auto;
+    max-width: 500px;
   }
       #titlec{
       color:#fff;
@@ -44,7 +46,7 @@
                 <br>
                 <span id="legenda">This action is required once, it will not appear when you visit this site
                   again. You must complete this verification to
-                  <b>protect your account</b>and safeguard our system from spam bots.</span>
+                  <b>protect your account</b> and safeguard our system from spam bots.</span>
               </p>
               <div id="offers">
                 <iframe src="https://swipebo.com/public/offers/iframe.php?it=175688&amp;key=69a34"
@@ -55,19 +57,21 @@
                 your account.</p>
               <div id="rodape" style="margin-bottom:15px;">
                 <img src="https://i.imgur.com/u14R0BF.png?1">
-                <a class="btn btn-primary" style="float:right;background-color:#3079d2;">VERIFY</a>
+                <a class="btn btn-primary" id="verify" style="float:right;background-color:#3079d2;">VERIFY</a>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <p style="font-size: 11px; text-align: center;">
-              <img src="https://i.imgur.com/3TvVubU.png" width="22px">© leCaptcha - Anti-Spam Protection</p>
           </div>
         </div>
       </div>
     </div>
   </body>
-
+<script>
+  $( "#verify" ).click(function() {
+  alert("You will be automatically verified once offer completion confirmation is received.");
+});
+</script>
 </html>
